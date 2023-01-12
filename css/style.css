@@ -45,6 +45,7 @@ ul {
 .title p {
     color: #777;
     margin-bottom: 20px;
+    line-height: 1.8;
 }
 .title::before {
     content: '';
@@ -181,4 +182,220 @@ ul {
 .about {
     padding-top: 50px;
     padding-bottom: 50px;
+}
+.about .links {
+    margin: 80px 0 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about .links a {
+    display: block;
+    padding: 10px 20px;
+    color: #777;
+    border: 1px solid #eaecee;
+}
+.about .links a.active {
+    background-color: #ff9408;
+    color: #ffffff;
+}
+.about .info {
+    display: flex;
+    align-items: flex-start;
+}
+.about .info img {
+    padding: 10px;
+    border: 1px solid #eaecee;
+    margin-right: 20px;
+}
+.about .info .text h2 {
+    margin-bottom: 5px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.about .info .text h4 {
+    margin-bottom: 15px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #ff9408;  
+}
+.about .info .text p {
+    line-height: 1.4;
+    color: #777;
+}
+/*Services*/
+.services {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url(../images/Services-bg.jpg);
+}
+.services .title h1 {
+    color: #ffffff;
+}
+.services .title p {
+    color: #ffffff;
+}
+.services .images {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.services .images .image {
+    position: relative;
+}
+.services .images .text {
+    text-align: center;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    -o-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.services .images .text h4 {
+    text-transform: uppercase;
+    color: rgb(255 255 255 / 50%);
+    margin-top: 5px;
+}
+/*pricing*/
+.pricing {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #f6f6f6;
+}
+.pricing .title {
+    margin-bottom: 50px;
+}
+.pricing .plan {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+.pricing .plan .type {
+    background-color: #ff9408;
+    color: #000000;   
+    flex: 1;
+    padding: 50px 0;
+}
+.pricing .plan .price {
+    flex: 3;
+    background-color: #2d2d2d;
+    color: #ff9408;
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding: 36px 0;
+}
+.pricing .plan .info {
+    flex: 2;
+    background-color: #ffffff;
+    color: #928f97; 
+    font-weight: 550;
+    padding: 41px 0;
+    position: relative;
+}
+.pricing .plan .info:not(:last-of-type)::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 50px;
+    background-color: #928f97;
+    right: 0;
+    top: 35px;
+}
+.pricing .plan .order {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    flex: 2;
+    padding: 50px 0;
+    font-weight: bold;
+}
+/*contact*/
+.contact {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-image: url(../images/Contact-bg.jpg);
+}
+.contact .title,
+.contact .title p {
+    color: #ffffff;
+}
+/*get in touch*/
+.touch {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #000000;
+}
+.touch .content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.touch form {
+    width: 50%;
+    margin-right: 20px;
+}
+.touch form input {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.touch form textarea {
+    resize: none;
+    width: 100%;
+    display: block;
+    min-height: 150px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.touch form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-transform: uppercase;
+    background-color: #ff9408;
+    color: #ffffff;
+}
+.touch .content .info {
+    width: 30%;
+}
+.touch .content .info h2 {
+    color: #ff9408;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.touch .content .info .adress,
+.touch .content .info .call {
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.touch .content .info .mail {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.touch .content .info .mail i {
+    margin-right: 70px;
+}
+.touch .content .info .social img{
+    margin-right: 10px;
+}
+.footer {
+    background-image: url(../images/Contact-bg.jpg);
+    padding: 20px;
+    text-align: center;
+    color: #928f97;
+    text-transform: uppercase;
+    font-size: 0.7rem;
 }
